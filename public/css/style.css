@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", "sans-serif";
+}
+
+:root{
+    --bs-dark-color:#1a1d20;
+    --bs-dark-primary:#1c1c1c;
+    --bs-main-color:#fff;
+    --secondary-color:#29a9fd;
+    --bs-supporting-color:#c850c0;
+    --bs-primary-color: #808080;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--bs-dark-color);
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color:var(--bs-dark-color);
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button, a{
+    font-size: 1.15rem;
+    letter-spacing: 0.03rem;
+    word-spacing: .1rem;;
+}
+
+.common-heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+}
+
+.common-title { 
+    margin-bottom: 4.2rem;
+}
+
+/* navbar style */
+
+.nav-link{
+    color: var(--bs-main-color);
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: var(--secondary-color);
+}
+
+
+/* hero section start */
+.hero-section .container{
+    display: grid;
+    place-content: center;
+    height: inherit;
+}   
+
+.bg-main {
+    height: 80vh;
+    position: relative;
+}
+
+.bg-color{
+
+    background-color: var(--bs-dark-primary);
+}
+
+.text-light-grey{
+    color: var(--bs-primary-color);
+}
+.common-section{
+      padding: 0 0 9rem 0;
+}
+
+
+/* .bg-theme{
+    color: var(--bs-supporting-color);
+    background-image: none!important;
+} */
+
+
+.hero-video--section{
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.custom-shape-divider-bottom-1699971712 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1699971712 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1699971712 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* service section */
+
+.service-section {
+    padding: 6rem 0 3rem;
+}
+
+.icon-span {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--bs-main-color);
+}
+
+.card-box:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+/* more-info-section style */
+
+.more-info-section {
+
+    background-image: linear-gradient(rgba(22,22,22,0.7), rgba(22,22,22,0.9)), url("https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.more-info-section .img-section{
+    position: relative;
+    
+}
+
+.more-info-section .img-section img {
+    width: 70%;
+}
+
+/*carousal section */
+.carousel-inner .card{
+    background-color: #262631;
+    color: var( --bs-main-color);
+    transition: all .2s linear;
+}
+
+.carousel-inner .card p{
+    color: var( --bs-main-color);
+}
+
+.carousel-inner .card:hover{
+    background: var( --bs-main-color);
+    color: var( --bs-dark-color);
+}
+
+.carousel-inner .card:hover p{
+    color: var( --bs-dark-color);
+}
+
+.fa-star {
+    color: var(--bs-supporting-color);
+}
+
+.carousel-indicators{
+    bottom: -20%;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: .7rem;
+    height: .7rem;
+    background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 998px) {
+    .carousel .carousel-indicators {
+        bottom: -8%;
+    }
+}
+
+/* coursel styling Ends*/
+
+
+
+/*contact section */
+
+.contact-section{
+    position: relative;
+}
+
+.contact-section .common-title{
+    padding-top: 10rem;
+}
+
+.contact-section .form-section{
+    width: 50%;
+}
+
+.custom-shape-divider-top-1684211116 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1684211116 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1684211116 .shape-fill {
+    fill: var( --bs-main-color);
+}
+
+
+
+
+@media screen and (max-width: 998px) {
+    .contact-section .common-title{
+       padding-top: 10rem;
+    }
+
+    .contact-section  .form-section{
+        width: 100%;
+    }
+}
+
+/*contact section end */
+
+
+/*footer styling */
+.main-footer-section{
+ padding: 0 0 4rem 0;
+    background-color: #222;
+    color: var( --bs-main-color);
+}
+
+.contact-div{
+    background-color:  var(--bs-dark-primary);
+}
+
+.icon-div{
+    width: 5rem;
+    height: 5rem;
+    /*background: #1089ff;*/
+}
+
+.icon-  {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #1089ff;
+    color: var( --bs-main-color);
+}
+
+.icon-span .fa-brands, .fab{
+    color:white;
+}
+
+.carousel-indicators{
+    bottom: -20%;
+}
+
+.carousel-indicators [data-bs-target]{
+    margin-top: 2rem;
+    width: .7rem;
+    height: .7rem;
+    background-color: #1089ff;
+}
+
+
+/* Basic styling for form layout */
+  
+  form {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  h2{
+    text-align: center;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #errorMessages {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  
